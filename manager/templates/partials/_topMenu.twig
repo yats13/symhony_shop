@@ -1,0 +1,33 @@
+{% block navigation %}
+<div class="dark-top">
+    <div class="container flex-row between">
+        <div class="left-side">
+            <p>Call: <a href="callto:+380987654321">(098) 765-43-21</a></p>
+        </div>
+        <div class="right-side">
+            <div class="nav-account">
+                <span class="btn-account">Account</span>
+                <ul>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-nav__wrapper flex-row">
+    <div class="logo">
+        <h1>logo</h1>
+    </div>
+    <nav class="top-nav">
+        <ul class="flex-row">
+            <li><a href="{{ path('home') }}">Main</a></li>
+            <li><a href="{{ path('about') }}">About</a></li>
+        </ul>
+    </nav>
+</div>
+{% endblock %}

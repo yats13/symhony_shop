@@ -1,0 +1,42 @@
+.dark-top{
+  background: @dark;
+  color: white;
+  justify-content: space-between;
+  a{
+    color: white;
+  }
+}
+.top-nav{
+  &__wrapper{
+    justify-content: space-between;
+  }
+  ul{
+    justify-content: space-around;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    font-size: 1.2em;
+  }
+}
+
+.nav-account{
+  position: relative;
+  box-shadow: @shadowBox;
+  z-index: 3;
+  ul{
+    position: absolute;
+    background: @info;
+    opacity: 0;
+    top: 1em;
+  }
+    &:hover{
+    ul{
+      opacity: 1;
+    }
+  }
+  a{
+    display: block;
+  }
+}

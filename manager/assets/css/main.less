@@ -1,0 +1,42 @@
+@import '_variables';
+@import '_top-nav';
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: @dark;
+}
+a{
+    text-decoration: none;
+    color: @dark;
+    &:focus, &:visited{
+        color: @pink;
+    }
+    &:hover, &:active{
+        color: @indigo;
+    }
+}
+.flex-row, .flex-column{
+    display: flex;
+}
+
+.flex-row{
+    flex-flow: row wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.container{
+    max-width: 100em;
+    margin: 0 auto;
+}
+.between{
+    justify-content: space-between;
+}

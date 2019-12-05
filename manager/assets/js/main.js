@@ -6,8 +6,8 @@
  */
 
 // any CSS you require will output into a single css file (main.css in this case)
-require('../css/main.css');
-
+import '../css/main.less';
+import '../css/nav.less';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // const $ = require('jquery');
 
