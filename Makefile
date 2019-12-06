@@ -12,8 +12,12 @@ console:
 
 yarn-dev:
 	docker-compose run --rm manager-node yarn add $(CMD) --dev
+yarn-add:
+	docker-compose run --rm manager-node yarn add $(CMD) --save
+
 yarn-watch:
 	docker-compose run --rm manager-node yarn encore dev --watch
+
 yarn-prod:
 	docker-compose run --rm manager-node yarn encore production
 docker-up:

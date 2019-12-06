@@ -8,7 +8,10 @@
 // any CSS you require will output into a single css file (main.css in this case)
 import '../css/main.less';
 import '../css/nav.less';
-// Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
-// const $ = require('jquery');
+import Vue from 'vue';
+import App from '../vue/App.vue'
 
-console.log('Hello Webpack Encore! Edit me in assets/js/main.js');
+new Vue({
+    el: '#app',
+    components:{App}
+});

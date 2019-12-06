@@ -29,7 +29,7 @@ Encore
 
     .enableLessLoader()
     .enablePostCssLoader()
-
+    .enableVueLoader()
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()
 
