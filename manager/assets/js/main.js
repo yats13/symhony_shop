@@ -9,8 +9,11 @@
 import '../css/main.less';
 import '../css/nav.less';
 import Vue from 'vue';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import App from '../vue/App.vue'
 
+Vue.use(VueAxios, axios)
 new Vue({
     el: '#app',
     components:{App}

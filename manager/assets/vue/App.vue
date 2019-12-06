@@ -1,12 +1,17 @@
 <template>
     <div>
-        <h1>Example</h1>
+        <h1>Apple</h1>
     </div>
 </template>
 
 <script>
     export default {
-        name: "app"
+        name: "app",
+        computed(){
+            this.axios.get(api).then((response) => {
+                console.log(response.data)
+            })
+        }
     }
 </script>
 
